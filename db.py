@@ -47,7 +47,9 @@ class ProductsDB:
 
     def add_product(self, product):
         """Adds a product to the database"""
-    pass
+        data=self.table
+        data.insert(product)
+        return f'we inserted this product {product}'
 
     def delete_product(self, doc_id):
         """Deletes a product from the database"""
